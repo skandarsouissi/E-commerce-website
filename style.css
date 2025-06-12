@@ -1,0 +1,121 @@
+/* Style général */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #495057;
+    line-height: 1.6;
+}
+
+/* Conteneur principal */
+.col-12.p-4 {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2.5rem !important;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Titre */
+h1.text-center {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    font-size: 2.2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+h1.text-center::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, #3498db, #2ecc71);
+}
+
+/* Labels */
+.form-label {
+    font-weight: 500;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* Champs de formulaire */
+.form-control {
+    padding: 0.75rem 1rem;
+    border: 1px solid #dfe6e9;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+/* Aide texte */
+.form-text {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    margin-top: -0.25rem;
+    margin-bottom: 1rem;
+}
+
+/* Bouton */
+.btn-primary {
+    background: linear-gradient(to right, #3498db, #2ecc71);
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 6px;
+    width: 100%;
+    margin: 1rem auto; /* Centre horizontalement */
+    display: block; /* Nécessaire pour margin:auto */
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+     /* Centre le texte dans le bouton */
+}
+
+
+.btn-primary:hover {
+    background: linear-gradient(to right, #2980b9, #27ae60);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Checkbox termes */
+.form-check {
+    margin-top: 1.5rem;
+}
+
+.form-check-input {
+    margin-top: 0.25rem;
+}
+
+.form-check-label {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .col-12.p-4 {
+        padding: 1.5rem !important;
+        margin: 1rem;
+    }
+    
+    h1.text-center {
+        font-size: 1.8rem;
+    }
+}
